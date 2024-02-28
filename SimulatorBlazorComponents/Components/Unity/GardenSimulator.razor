@@ -1,0 +1,26 @@
+@using SimulatorBlazorComponents.Unity
+@using System.Threading.Tasks
+
+<canvas id="unity-canvas" class="w-100 h-100" style=" background: #1F1F20" />
+<CascadingValue Value="this">
+    @ChildContent
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } = null!;
+    [Inject]
+    public UnityInstanceLoader Loader { get; set; } = null!;
+    [Inject]
+    public UnityBridge Bridge { get; set; } = null!;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (!firstRender) return;
+        if (!(await Loader.LoadUnityInstance()))
+        {
+            Console.WriteLine("Failed to load Unity instance");
+            return;
+        }
+    }
+}

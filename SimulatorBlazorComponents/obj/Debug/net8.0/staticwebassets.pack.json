@@ -1,0 +1,197 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\obj\\Debug\\net8.0\\compressed\\6zqgg6xk0b.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\Build\\Build.data.unityweb",
+      "PackagePath": "staticwebassets\\Build\\Build.data.unityweb"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\Build\\Build.framework.js.unityweb",
+      "PackagePath": "staticwebassets\\Build\\Build.framework.js.unityweb"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\Build\\Build.loader.js",
+      "PackagePath": "staticwebassets\\Build\\Build.loader.js"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\Build\\Build.wasm.unityweb",
+      "PackagePath": "staticwebassets\\Build\\Build.wasm.unityweb"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\StreamingAssets\\UnityServicesProjectConfiguration.json",
+      "PackagePath": "staticwebassets\\StreamingAssets\\UnityServicesProjectConfiguration.json"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\favicon.ico",
+      "PackagePath": "staticwebassets\\TemplateData\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\fullscreen-button.png",
+      "PackagePath": "staticwebassets\\TemplateData\\fullscreen-button.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\progress-bar-empty-dark.png",
+      "PackagePath": "staticwebassets\\TemplateData\\progress-bar-empty-dark.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\progress-bar-empty-light.png",
+      "PackagePath": "staticwebassets\\TemplateData\\progress-bar-empty-light.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\progress-bar-full-dark.png",
+      "PackagePath": "staticwebassets\\TemplateData\\progress-bar-full-dark.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\progress-bar-full-light.png",
+      "PackagePath": "staticwebassets\\TemplateData\\progress-bar-full-light.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\style.css",
+      "PackagePath": "staticwebassets\\TemplateData\\style.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\unity-logo-dark.png",
+      "PackagePath": "staticwebassets\\TemplateData\\unity-logo-dark.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\unity-logo-light.png",
+      "PackagePath": "staticwebassets\\TemplateData\\unity-logo-light.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\TemplateData\\webgl-logo.png",
+      "PackagePath": "staticwebassets\\TemplateData\\webgl-logo.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\husqvarna-group-tools-theme.css",
+      "PackagePath": "staticwebassets\\css\\husqvarna-group-tools-theme.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\tailwind-input.css",
+      "PackagePath": "staticwebassets\\css\\tailwind-input.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\css\\tailwind-output.css",
+      "PackagePath": "staticwebassets\\css\\tailwind-output.css"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaGothic-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaGothic-Bold.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaGothic-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaGothic-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaGothic-Italic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaGothic-Italic.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaGothic-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaGothic-Light.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaGothic-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaGothic-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaGothic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaGothic.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\fonts\\HusqvarnaIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\HusqvarnaIcons.ttf"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "D:\\Projects\\_work\\_pocs\\SimulatorBlazorComponents\\SimulatorBlazorComponents\\wwwroot\\scripts\\unity.js",
+      "PackagePath": "staticwebassets\\scripts\\unity.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SimulatorBlazorComponents.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SimulatorBlazorComponents.props",
+      "PackagePath": "build\\SimulatorBlazorComponents.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SimulatorBlazorComponents.props",
+      "PackagePath": "buildMultiTargeting\\SimulatorBlazorComponents.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SimulatorBlazorComponents.props",
+      "PackagePath": "buildTransitive\\SimulatorBlazorComponents.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

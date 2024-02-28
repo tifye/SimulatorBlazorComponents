@@ -1,0 +1,57 @@
+@using SimulatorBlazorComponents.Unity
+
+@implements IDisposable
+
+@ChildContent
+
+@code {
+    [CascadingParameter]
+    public GardenSimulator GS { get; set; } = null!;
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } = null!;
+
+    [EditorRequired, Parameter]
+    public GardenEditorModels.Models.Map Map { get; set; } = null!;
+
+    public void Dispose()
+    {
+        GS.Loader.UnityInstanceLoaded -= OnUnityLoaded;
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var polygons = Extensions.GardenConverterExtensions.GetPolygons(Map);
+            foreach (var polygon in polygons)
+            {
+                await GS.Bridge.Pipe("Routers", "AddMapItem", polygon);
+            }
+            await GS.Bridge.SendMessage("Routers", "GenerateMap");
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        if (GS.Loader.IsInstanceLoaded)
+        {
+            ClearMap();
+        }
+        else
+        {
+            GS.Loader.UnityInstanceLoaded += OnUnityLoaded;
+        }
+    }
+
+    private void OnUnityLoaded(object sender, UnityInstanceEventArgs args)
+    {
+        ClearMap();
+    }
+
+    private void ClearMap()
+    {
+        _ = GS.Bridge.SendMessage("Routers", "ClearMap");
+    }
+}

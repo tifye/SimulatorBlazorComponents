@@ -1,0 +1,80 @@
+﻿@page "/"
+
+@implements IDisposable
+
+@using SimulatorBlazorComponents.Unity
+@using SimulatorBlazorComponents.Components.Unity
+@using SimulatorBlazorComponents.Extensions
+@using GardenEditorModels.Models
+
+@inject HttpClient HttpClient
+@inject UnityInstanceLoader UnityInstanceLoader
+
+<PageTitle>Home</PageTitle>
+
+<div class="container vw-100">
+    <GardenSimulator>
+        @if (GardenMap is not null)
+        {
+            <Garden Map="@GardenMap">
+                <Mower Platform="P3" Rotation="@MowerRotation" X="MowerX" Y="MowerY" />
+                <ChargingStation Rotation="@ChargingStationRotation" Y="@ChargingStationY" />
+            </Garden>
+        }
+    </GardenSimulator>
+</div>
+
+@code {
+    private System.Threading.Timer? _timer;
+    private System.Diagnostics.Stopwatch _stopwatch = new System.Diagnostics.Stopwatch();
+
+    private float MowerRotation = 90;
+    private float MowerX = 2;
+    private float MowerY = 0;
+    private float ChargingStationRotation = 15;
+    private float ChargingStationY = 25;
+    private GardenEditorModels.Models.Map? GardenMap;
+
+    public void Dispose()
+    {
+        UnityInstanceLoader.UnityInstanceLoaded -= UnityInstanceLoader_UnityInstanceLoaded;
+
+        _timer?.Dispose();
+        _stopwatch.Stop();
+        _timer = null;
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        UnityInstanceLoader.UnityInstanceLoaded += UnityInstanceLoader_UnityInstanceLoaded;
+
+        _stopwatch.Start();
+        _timer = new Timer(_ =>
+        {
+            var angleIncr = 360 / 15f;
+            MowerRotation = (float)(Math.Atan2(MowerY - 25, MowerX) * 180 / (float)Math.PI) - 90 - angleIncr;
+            MowerX = (float)Math.Sin(_stopwatch.Elapsed.TotalSeconds) * 2;
+            MowerY = (float)Math.Cos(_stopwatch.Elapsed.TotalSeconds) * 2;
+
+            MowerY += 25;
+
+            ChargingStationRotation = (ChargingStationRotation - angleIncr / 3) % 360;
+            InvokeAsync(StateHasChanged);
+        }, null, 0, 200);
+    }
+
+    private void UnityInstanceLoader_UnityInstanceLoaded(object sender, EventArgs e)
+    {
+        _ = LoadMap();
+    }
+
+    private async Task LoadMap()
+    {
+        var bytes = await HttpClient.GetByteArrayAsync("/test-files/map.json");
+        var map = GardenConverterExtensions.MarshalMapFromJson(bytes);
+        GardenMap = map;
+        await InvokeAsync(StateHasChanged);
+    }
+}

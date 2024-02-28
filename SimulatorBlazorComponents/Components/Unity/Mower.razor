@@ -1,0 +1,66 @@
+@using SimulatorBlazorComponents.Unity
+@using SimulatorBlazorComponents.Model
+
+@implements IDisposable
+
+@code {
+    [CascadingParameter]
+    public GardenSimulator GS { get; set; } = null!;
+
+    [EditorRequired, Parameter]
+    public string Platform { get; set; } = "P3";
+
+    [Parameter] public float X { get; set; } = 0;
+    [Parameter] public float Y { get; set; } = 0;
+    [Parameter] public float Rotation { get; set; } = 0;
+
+    private MowerTransform _ms = new MowerTransform(90, new(0, 0));
+    private MowerTransform _lastMs = new MowerTransform(90, new(0, 0));
+
+    public void Dispose()
+    {
+        GS.Loader.UnityInstanceLoaded -= OnUnityLoaded;
+    }
+
+    protected override void OnInitialized()
+    {
+        if (GS.Loader.IsInstanceLoaded)
+        {
+            InitializeGameObjects();
+        }
+        else
+        {
+            GS.Loader.UnityInstanceLoaded += OnUnityLoaded;
+        }
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        _ms = new MowerTransform(Rotation, new(X, Y));
+    }
+
+    protected override bool ShouldRender()
+    {
+        if (_ms.Equals(_lastMs)) return false;
+        _lastMs = _ms;
+        return true;
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (!GS.Loader.IsInstanceLoaded) return;
+        _ = GS.Bridge.Pipe("Routers", "SetMowerState", _ms);
+    }
+
+    private void OnUnityLoaded(object sender, UnityInstanceEventArgs args)
+    {
+        InitializeGameObjects();
+    }
+
+    private void InitializeGameObjects()
+    {
+        _ = GS.Bridge.SendMessage("Routers", "SetMowerPlatform", "P3");
+        _ = GS.Bridge.Pipe("Routers", "SetMowerState", _ms);
+    }
+}
